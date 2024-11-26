@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#gameName{
+    font-size: 300%;
+    font-weight: bold;
+}
+header > nav{
+    display: flex;
+    justify-content: flex-end;
+
+    width: 80%;
+    background-color: rgb(230,230,250);
+    border-radius: 1em;
+    font-weight: bold;
+}
+header > nav > a{
+    text-decoration: none;
+    color: black; 
+    margin: 2.4%;
+    transition: 0.2s color;
+}
+header > nav > a:hover{
+    color: rgb(0,191,255); 
+}
+#loginButton{
+    background-color: rgb(81,1,255);
+    font-weight: bold;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 1em;
+    text-decoration: none;
+    border-style: solid;
+    transition: 0.2s background-color, 0.2s border-style, 0.2s border-color, 0.2s color;
+}
+#loginButton:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+    color: black;
+}
