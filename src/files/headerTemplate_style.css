@@ -30,8 +30,10 @@ header > nav > a:hover{
     font-weight: bold;
     color: white;
     margin: 1%;
-    padding: 1%;
-    border-radius: 1em;
+    height: 1%;
+    padding: 0.5% 2% 0.5% 2%;
+    align-self: center;
+    border-radius: 4em;
     text-decoration: none;
     border-style: solid;
     transition: 0.2s background-color, 0.2s border-style, 0.2s border-color, 0.2s color;
