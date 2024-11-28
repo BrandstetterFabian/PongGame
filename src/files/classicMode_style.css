@@ -1,0 +1,32 @@
+body{
+    font-family: Century Gothic;
+    display: flex;
+    justify-content: center;
+}
+#mainMenu{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: absolute;
+    text-align: center;
+    padding: 1%;
+}
+#mainMenu > div{
+    font-size: 220%;
+    font-weight: bold;
+}
+#startButton{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid black;
+    font-size: 120%;
+    border-radius: 5px;
+    background-color: rgb(230,230,250);
+    transition: background-color 0.3s;
+}
+#startButton:hover{
+    background-color: rgb(81,1,255);
+    color: white;
+}
+ 

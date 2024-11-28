@@ -12,23 +12,25 @@ iframe{
 #chooseGameModeFieldset > form > label{
     font-size: 120%;
 }
-.radio-button input[type="radio"] {
-    display: none;
-}
-.radio-button {
+#chooseGameModeFieldset > button{
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
     border: 2px solid black;
+    font-size: 120%;
     border-radius: 5px;
     background-color: rgb(230,230,250);
+    transition: background-color 0.3s;
+}
+#chooseGameModeFieldset > button:hover{
+    background-color: rgb(81,1,255);
+}
+#chooseGameModeFieldset > button > a{
+    text-decoration: none;
+    color: black;
     transition: background-color 0.3s, color 0.3s;
 }
-.radio-button input[type="radio"]:checked + span{
-    background-color: rgb(81,1,255);
-    color: white;
-}
-.radio-button:hover {
-    background-color: rgb(81,1,255);
+#chooseGameModeFieldset > button:hover > a{
+    text-decoration: none;
     color: white;
 }
