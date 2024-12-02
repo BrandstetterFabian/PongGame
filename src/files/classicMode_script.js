@@ -1,6 +1,4 @@
 function Start(){
-    
-
     //REMOVE THE MAIN MENU
     let mainMenu = document.getElementById("mainMenu");
     document.body.removeChild(mainMenu);
@@ -81,24 +79,31 @@ function Game(){
 
     document.body.appendChild(ball);
 
-   let inter = setInterval(BallMovement, 20);
+    let inter = setInterval(() => {
+      BallMovement();
+      PlayerMovement(); 
+    }, 20);
 
-    //PLAYER MOVEMENT
-    function PlayerMovement(){
-        let key = event.keyCode;
-        
-        if (key === 38 && playerTop > windowHeight - windowHeight) { 
-          playerTop -= playerSpeed;
-         }
-        else if (key === 40 && playerTop < windowHeight - playerHeight) { 
-          playerTop += playerSpeed;
-        }
-    
-        player.style.left = playerLeft + "px";
-        player.style.top = playerTop + "px";
-    
-        document.body.appendChild(player);
+    // PLAYER MOVEMENT 
+let keys = {};
+
+document.addEventListener("keydown", (event) => {
+    keys[event.keyCode] = true;
+});
+document.addEventListener("keyup", (event) => {
+    keys[event.keyCode] = false;
+});
+
+function PlayerMovement() {
+    if (keys[38] && playerTop > 0) { // Arrow Up
+        playerTop -= playerSpeed;
     }
+    if (keys[40] && playerTop < windowHeight - playerHeight) { // Arrow Down
+        playerTop += playerSpeed;
+    }
+
+    player.style.top = playerTop + "px";
+}
     //OPPONENT MOVEMENT
     function OpponentMovement(){
         if(ballTopPlus == true && opponentTop < windowHeight - opponentHeight && ballLeftPlus == true){         
