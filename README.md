@@ -1,6 +1,6 @@
 # PONG GAME
-This game is all about the well known game named pong. It is a redesigned and newer version which is still in progress.
-Classic can already be played, block defense mode, upside down mode and much more are following!
+This game is all about the famous game Pong. It is a redesigned and newer version which is still in progress.
+Classic mode (it will still get some upgrades) can already be played - block defense mode, upside down mode and much more are following!
 
 ## Classic Mode
 It's quite self-explaining since it's an easy understandable mode. You can move the paddle with your up- and down-keys and
