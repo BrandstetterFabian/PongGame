@@ -1,7 +1,3 @@
-function Start(){
-    //REMOVE THE MAIN MENU
-    let mainMenu = document.getElementById("mainMenu");
-    document.body.removeChild(mainMenu);
 
     Game();
 function Game(){
@@ -200,4 +196,4 @@ function GAMEOVER(){
 }
 
 }
-}
+

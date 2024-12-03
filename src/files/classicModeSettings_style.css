@@ -11,7 +11,7 @@ body{
     padding: 1%;
 }
 #mainMenu > legend{
-    font-size: 220%;
+    font-size: 200%;
     font-weight: bold;
 }
 #startButton{
@@ -26,6 +26,14 @@ body{
 }
 #startButton:hover{
     background-color: rgb(81,1,255);
+}
+#startButton > a{
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+#startButton:hover > a{
+    text-decoration: none;
     color: white;
 }
  
